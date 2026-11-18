@@ -1,0 +1,17 @@
+# =========================
+
+# Vivado Generated Files
+
+# =========================
+
+.Xil/
+*.jou
+*.log
+*.str
+*.wcfg
+
+*.cache/
+*.gen/
+*.hw/
+*.runs/
+*.sim/

@@ -1,0 +1,1 @@
+--incr --debug typical --relax --mt auto -L xil_defaultlib -L xlconstant_v1_1_7 -L xlconcat_v2_1_4 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot babel_fish xil_defaultlib.babel_fish xil_defaultlib.glbl -log elaborate.log

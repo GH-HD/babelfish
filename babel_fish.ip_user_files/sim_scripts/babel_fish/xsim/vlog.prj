@@ -1,0 +1,15 @@
+verilog xil_defaultlib --include "../../../../babel_fish.gen/sources_1/bd/babel_fish/ipshared/6dcf" \
+"../../../bd/babel_fish/ip/babel_fish_clk_wiz_0_0/babel_fish_clk_wiz_0_0_clk_wiz.v" \
+"../../../bd/babel_fish/ip/babel_fish_clk_wiz_0_0/babel_fish_clk_wiz_0_0.v" \
+"../../../bd/babel_fish/ip/babel_fish_xlconstant_1_0/sim/babel_fish_xlconstant_1_0.v" \
+"../../../bd/babel_fish/ip/babel_fish_xlconstant_0_0/sim/babel_fish_xlconstant_0_0.v" \
+"../../../bd/babel_fish/ip/babel_fish_xlconstant_2_0/sim/babel_fish_xlconstant_2_0.v" \
+"../../../bd/babel_fish/ip/babel_fish_xlconstant_4_0/sim/babel_fish_xlconstant_4_0.v" \
+"../../../bd/babel_fish/ip/babel_fish_xlconstant_5_0/sim/babel_fish_xlconstant_5_0.v" \
+"../../../bd/babel_fish/ip/babel_fish_xlconstant_6_0/sim/babel_fish_xlconstant_6_0.v" \
+"../../../bd/babel_fish/ip/babel_fish_xlconstant_7_0/sim/babel_fish_xlconstant_7_0.v" \
+"../../../bd/babel_fish/ip/babel_fish_xlconcat_0_0/sim/babel_fish_xlconcat_0_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

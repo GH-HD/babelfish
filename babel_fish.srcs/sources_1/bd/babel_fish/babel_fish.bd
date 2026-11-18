@@ -1,0 +1,2519 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x8EC49E6E6EC36656",
+      "device": "xc7a35tcpg236-1",
+      "gen_directory": "../../../../babel_fish.gen/sources_1/bd/babel_fish",
+      "name": "babel_fish",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2021.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "clk_wiz_0": "",
+      "xlconstant_1": "",
+      "async2sync_0": "",
+      "async2sync_1": "",
+      "async2sync_4": "",
+      "no_t_0": "",
+      "and_and_0": "",
+      "and_and_1": "",
+      "and_and_2": "",
+      "and_and_3": "",
+      "dfilpflop_0": "",
+      "dfilpflop_1": "",
+      "deglitcher_0": "",
+      "deglitcher_1": "",
+      "frq_detec_v2_0": "",
+      "ask_2_bit_n_cnt_0": "",
+      "avrg_tic_pr_ask_bit_1": "",
+      "avrg_tic_pr_ddsss_bi_0": "",
+      "time_manager_0": "",
+      "fdt_pk_0": "",
+      "counter_0": "",
+      "xlconstant_0": "",
+      "xlconstant_2": "",
+      "xlconstant_4": "",
+      "xlconstant_5": "",
+      "multiplexer_0": "",
+      "async2sync_5": "",
+      "xlconstant_6": "",
+      "xlconstant_7": "",
+      "xlconcat_0": "",
+      "special_pk_0": "",
+      "predict_good_cnx_0": "",
+      "simple_fdt_handler_0": "",
+      "bit_lvl_ddsss_2_mdl_0": "",
+      "scheduler_0": "",
+      "gen_seq_0": ""
+    },
+    "ports": {
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "babel_fish_clk",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "12000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "ask": {
+        "type": "data",
+        "direction": "I",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "zxn": {
+        "type": "data",
+        "direction": "I",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "zxp": {
+        "type": "data",
+        "direction": "I",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "CF_EPPN": {
+        "type": "data",
+        "direction": "O",
+        "left": "0",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "CF_MPPN": {
+        "type": "data",
+        "direction": "O",
+        "left": "0",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "CF_EPPP": {
+        "type": "data",
+        "direction": "O",
+        "left": "0",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "CF_MPPP": {
+        "type": "data",
+        "direction": "O",
+        "left": "0",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "CM3N": {
+        "type": "data",
+        "direction": "O",
+        "left": "0",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "CM2N": {
+        "type": "data",
+        "direction": "O",
+        "left": "0",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "CM1N": {
+        "type": "data",
+        "direction": "O",
+        "left": "0",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "CM3P": {
+        "type": "data",
+        "direction": "O",
+        "left": "0",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "CM2P": {
+        "type": "data",
+        "direction": "O",
+        "left": "0",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "CM1P": {
+        "type": "data",
+        "direction": "O",
+        "left": "0",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "dbg_ddsss": {
+        "type": "data",
+        "direction": "O",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "dbg_bit": {
+        "type": "data",
+        "direction": "O",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "dbg_vld": {
+        "type": "data",
+        "direction": "O",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "dbg_clk": {
+        "type": "data",
+        "direction": "O",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "dbg_ask": {
+        "type": "data",
+        "direction": "O",
+        "left": "0",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "dbg_clk_src": {
+        "type": "data",
+        "direction": "O",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "dbg_zxp": {
+        "type": "data",
+        "direction": "O",
+        "left": "0",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "dbg_zxn": {
+        "type": "data",
+        "direction": "O",
+        "left": "0",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "dbg_rec_bit": {
+        "type": "data",
+        "direction": "O",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "dbg_rdy": {
+        "type": "data",
+        "direction": "O",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "dbg_fltr_zxp": {
+        "type": "data",
+        "direction": "O",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "dbg_fltr_zxn": {
+        "type": "data",
+        "direction": "O",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "dbg_glitch": {
+        "type": "data",
+        "direction": "O",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "dbg_miss": {
+        "type": "data",
+        "direction": "O",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "dbg_zxp_edge": {
+        "type": "data",
+        "direction": "O",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "dbg_a2b_vld": {
+        "type": "data",
+        "direction": "O",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "dbg_a2b_bit": {
+        "type": "data",
+        "direction": "O",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "dbg_a2b_done": {
+        "type": "data",
+        "direction": "O",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "tx1": {
+        "type": "data",
+        "direction": "O",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "bdg_tx2": {
+        "type": "data",
+        "direction": "O",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "vrect_ok": {
+        "type": "data",
+        "direction": "I",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "start_fdt_btn": {
+        "type": "data",
+        "direction": "I",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "dbg_sending_qi_pk": {
+        "type": "data",
+        "direction": "O",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "dbg_sending_sp_pk": {
+        "type": "data",
+        "direction": "O",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "dbg_sending_fdt_pk": {
+        "type": "data",
+        "direction": "O",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      }
+    },
+    "components": {
+      "clk_wiz_0": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "xci_name": "babel_fish_clk_wiz_0_0",
+        "xci_path": "ip\\babel_fish_clk_wiz_0_0\\babel_fish_clk_wiz_0_0.xci",
+        "inst_hier_path": "clk_wiz_0",
+        "parameters": {
+          "CLKIN1_JITTER_PS": {
+            "value": "833.33"
+          },
+          "CLKOUT1_JITTER": {
+            "value": "479.872"
+          },
+          "CLKOUT1_PHASE_ERROR": {
+            "value": "668.310"
+          },
+          "MMCM_CLKFBOUT_MULT_F": {
+            "value": "62.500"
+          },
+          "MMCM_CLKIN1_PERIOD": {
+            "value": "83.333"
+          },
+          "MMCM_CLKIN2_PERIOD": {
+            "value": "10.0"
+          },
+          "MMCM_CLKOUT0_DIVIDE_F": {
+            "value": "7.500"
+          },
+          "PRIM_IN_FREQ": {
+            "value": "12"
+          },
+          "USE_LOCKED": {
+            "value": "false"
+          },
+          "USE_RESET": {
+            "value": "false"
+          }
+        }
+      },
+      "xlconstant_1": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "babel_fish_xlconstant_1_0",
+        "xci_path": "ip\\babel_fish_xlconstant_1_0\\babel_fish_xlconstant_1_0.xci",
+        "inst_hier_path": "xlconstant_1",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "0"
+          }
+        }
+      },
+      "async2sync_0": {
+        "vlnv": "xilinx.com:module_ref:async2sync:1.0",
+        "xci_name": "babel_fish_async2sync_0_0",
+        "xci_path": "ip\\babel_fish_async2sync_0_0\\babel_fish_async2sync_0_0.xci",
+        "inst_hier_path": "async2sync_0",
+        "parameters": {
+          "sync_level": {
+            "value": "5"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "async2sync",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "i_data": {
+            "direction": "I",
+            "left": "0",
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "undef",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "o_data": {
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          }
+        }
+      },
+      "async2sync_1": {
+        "vlnv": "xilinx.com:module_ref:async2sync:1.0",
+        "xci_name": "babel_fish_async2sync_0_1",
+        "xci_path": "ip\\babel_fish_async2sync_0_1\\babel_fish_async2sync_0_1.xci",
+        "inst_hier_path": "async2sync_1",
+        "parameters": {
+          "sync_level": {
+            "value": "5"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "async2sync",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "i_data": {
+            "direction": "I",
+            "left": "0",
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "undef",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "o_data": {
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          }
+        }
+      },
+      "async2sync_4": {
+        "vlnv": "xilinx.com:module_ref:async2sync:1.0",
+        "xci_name": "babel_fish_async2sync_0_2",
+        "xci_path": "ip\\babel_fish_async2sync_0_2\\babel_fish_async2sync_0_2.xci",
+        "inst_hier_path": "async2sync_4",
+        "parameters": {
+          "sync_level": {
+            "value": "5"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "async2sync",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "i_data": {
+            "direction": "I",
+            "left": "0",
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "undef",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "o_data": {
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          }
+        }
+      },
+      "no_t_0": {
+        "vlnv": "xilinx.com:module_ref:no_t:1.0",
+        "xci_name": "babel_fish_no_t_0_0",
+        "xci_path": "ip\\babel_fish_no_t_0_0\\babel_fish_no_t_0_0.xci",
+        "inst_hier_path": "no_t_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "no_t",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "cin": {
+            "direction": "I"
+          },
+          "cout": {
+            "direction": "O"
+          }
+        }
+      },
+      "and_and_0": {
+        "vlnv": "xilinx.com:module_ref:and_and:1.0",
+        "xci_name": "babel_fish_and_and_0_0",
+        "xci_path": "ip\\babel_fish_and_and_0_0\\babel_fish_and_and_0_0.xci",
+        "inst_hier_path": "and_and_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "and_and",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "i_a": {
+            "direction": "I",
+            "left": "0",
+            "right": "0"
+          },
+          "i_b": {
+            "direction": "I",
+            "left": "0",
+            "right": "0"
+          },
+          "o_c": {
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          }
+        }
+      },
+      "and_and_1": {
+        "vlnv": "xilinx.com:module_ref:and_and:1.0",
+        "xci_name": "babel_fish_and_and_1_0",
+        "xci_path": "ip\\babel_fish_and_and_1_0\\babel_fish_and_and_1_0.xci",
+        "inst_hier_path": "and_and_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "and_and",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "i_a": {
+            "direction": "I",
+            "left": "0",
+            "right": "0"
+          },
+          "i_b": {
+            "direction": "I",
+            "left": "0",
+            "right": "0"
+          },
+          "o_c": {
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          }
+        }
+      },
+      "and_and_2": {
+        "vlnv": "xilinx.com:module_ref:and_and:1.0",
+        "xci_name": "babel_fish_and_and_0_1",
+        "xci_path": "ip\\babel_fish_and_and_0_1\\babel_fish_and_and_0_1.xci",
+        "inst_hier_path": "and_and_2",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "and_and",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "i_a": {
+            "direction": "I",
+            "left": "0",
+            "right": "0"
+          },
+          "i_b": {
+            "direction": "I",
+            "left": "0",
+            "right": "0"
+          },
+          "o_c": {
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          }
+        }
+      },
+      "and_and_3": {
+        "vlnv": "xilinx.com:module_ref:and_and:1.0",
+        "xci_name": "babel_fish_and_and_2_0",
+        "xci_path": "ip\\babel_fish_and_and_2_0\\babel_fish_and_and_2_0.xci",
+        "inst_hier_path": "and_and_3",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "and_and",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "i_a": {
+            "direction": "I",
+            "left": "0",
+            "right": "0"
+          },
+          "i_b": {
+            "direction": "I",
+            "left": "0",
+            "right": "0"
+          },
+          "o_c": {
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          }
+        }
+      },
+      "dfilpflop_0": {
+        "vlnv": "xilinx.com:module_ref:dfilpflop:1.0",
+        "xci_name": "babel_fish_dfilpflop_0_0",
+        "xci_path": "ip\\babel_fish_dfilpflop_0_0\\babel_fish_dfilpflop_0_0.xci",
+        "inst_hier_path": "dfilpflop_0",
+        "parameters": {
+          "data_width": {
+            "value": "1"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "dfilpflop",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "i_data": {
+            "direction": "I",
+            "left": "0",
+            "right": "0"
+          },
+          "o_data": {
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          },
+          "o_not_data": {
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          }
+        }
+      },
+      "dfilpflop_1": {
+        "vlnv": "xilinx.com:module_ref:dfilpflop:1.0",
+        "xci_name": "babel_fish_dfilpflop_1_0",
+        "xci_path": "ip\\babel_fish_dfilpflop_1_0\\babel_fish_dfilpflop_1_0.xci",
+        "inst_hier_path": "dfilpflop_1",
+        "parameters": {
+          "data_width": {
+            "value": "1"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "dfilpflop",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "i_data": {
+            "direction": "I",
+            "left": "0",
+            "right": "0"
+          },
+          "o_data": {
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          },
+          "o_not_data": {
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          }
+        }
+      },
+      "deglitcher_0": {
+        "vlnv": "xilinx.com:module_ref:deglitcher:1.0",
+        "xci_name": "babel_fish_deglitcher_0_0",
+        "xci_path": "ip\\babel_fish_deglitcher_0_0\\babel_fish_deglitcher_0_0.xci",
+        "inst_hier_path": "deglitcher_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "deglitcher",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "i_zx": {
+            "direction": "I"
+          },
+          "i_mpp": {
+            "direction": "I"
+          },
+          "o_zx": {
+            "direction": "O"
+          },
+          "o_glitch": {
+            "direction": "O"
+          },
+          "o_miss": {
+            "direction": "O"
+          },
+          "o_rising_edge": {
+            "direction": "O"
+          }
+        }
+      },
+      "deglitcher_1": {
+        "vlnv": "xilinx.com:module_ref:deglitcher:1.0",
+        "xci_name": "babel_fish_deglitcher_1_0",
+        "xci_path": "ip\\babel_fish_deglitcher_1_0\\babel_fish_deglitcher_1_0.xci",
+        "inst_hier_path": "deglitcher_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "deglitcher",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "i_zx": {
+            "direction": "I"
+          },
+          "i_mpp": {
+            "direction": "I"
+          },
+          "o_zx": {
+            "direction": "O"
+          },
+          "o_glitch": {
+            "direction": "O"
+          },
+          "o_miss": {
+            "direction": "O"
+          },
+          "o_rising_edge": {
+            "direction": "O"
+          }
+        }
+      },
+      "frq_detec_v2_0": {
+        "vlnv": "xilinx.com:module_ref:frq_detec_v2:1.0",
+        "xci_name": "babel_fish_frq_detec_v2_0_0",
+        "xci_path": "ip\\babel_fish_frq_detec_v2_0_0\\babel_fish_frq_detec_v2_0_0.xci",
+        "inst_hier_path": "frq_detec_v2_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "frq_detec_v2",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "i_pwm": {
+            "direction": "I"
+          },
+          "o_data": {
+            "direction": "O"
+          }
+        }
+      },
+      "ask_2_bit_n_cnt_0": {
+        "vlnv": "xilinx.com:module_ref:ask_2_bit_n_cnt:1.0",
+        "xci_name": "babel_fish_ask_2_bit_n_cnt_0_0",
+        "xci_path": "ip\\babel_fish_ask_2_bit_n_cnt_0_0\\babel_fish_ask_2_bit_n_cnt_0_0.xci",
+        "inst_hier_path": "ask_2_bit_n_cnt_0",
+        "parameters": {
+          "cnt_width": {
+            "value": "16"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "ask_2_bit_n_cnt",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "i_ask": {
+            "direction": "I"
+          },
+          "o_bit": {
+            "direction": "O"
+          },
+          "o_vld": {
+            "direction": "O"
+          },
+          "o_done": {
+            "direction": "O"
+          },
+          "o_cnt": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "o_cnt_vld": {
+            "direction": "O"
+          },
+          "o_receiving_ask": {
+            "direction": "O"
+          }
+        }
+      },
+      "avrg_tic_pr_ask_bit_1": {
+        "vlnv": "xilinx.com:module_ref:avrg_tic_pr_ask_bit_v2:1.0",
+        "xci_name": "babel_fish_avrg_tic_pr_ask_bit_1_0",
+        "xci_path": "ip\\babel_fish_avrg_tic_pr_ask_bit_1_0\\babel_fish_avrg_tic_pr_ask_bit_1_0.xci",
+        "inst_hier_path": "avrg_tic_pr_ask_bit_1",
+        "parameters": {
+          "cnt_width": {
+            "value": "16"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "avrg_tic_pr_ask_bit_v2",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "i_cnt": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "i_vld": {
+            "direction": "I"
+          },
+          "o_cnt": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "avrg_tic_pr_ddsss_bi_0": {
+        "vlnv": "xilinx.com:module_ref:avrg_tic_pr_ddsss_bit_v2:1.0",
+        "xci_name": "babel_fish_avrg_tic_pr_ddsss_bi_0_0",
+        "xci_path": "ip\\babel_fish_avrg_tic_pr_ddsss_bi_0_0\\babel_fish_avrg_tic_pr_ddsss_bi_0_0.xci",
+        "inst_hier_path": "avrg_tic_pr_ddsss_bi_0",
+        "parameters": {
+          "output_width": {
+            "value": "16"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "avrg_tic_pr_ddsss_bit_v2",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "i_rdy": {
+            "direction": "I"
+          },
+          "i_xpp": {
+            "direction": "I"
+          },
+          "i_receiving_ask": {
+            "direction": "I"
+          },
+          "o_tic_nbr": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "time_manager_0": {
+        "vlnv": "xilinx.com:module_ref:time_manager:1.0",
+        "xci_name": "babel_fish_time_manager_0_0",
+        "xci_path": "ip\\babel_fish_time_manager_0_0\\babel_fish_time_manager_0_0.xci",
+        "inst_hier_path": "time_manager_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "time_manager",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "i_vld": {
+            "direction": "I"
+          },
+          "i_bit": {
+            "direction": "I"
+          },
+          "i_done": {
+            "direction": "I"
+          },
+          "i_ddsss_tic_pr_bit": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "i_ask_tic_pr_bit": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "i_rdy": {
+            "direction": "I"
+          },
+          "o_bit": {
+            "direction": "O"
+          },
+          "o_vld": {
+            "direction": "O"
+          },
+          "o_no_sending_new_fdt_byte": {
+            "direction": "O"
+          }
+        }
+      },
+      "fdt_pk_0": {
+        "vlnv": "xilinx.com:module_ref:fdt_pk:1.0",
+        "xci_name": "babel_fish_fdt_pk_0_0",
+        "xci_path": "ip\\babel_fish_fdt_pk_0_0\\babel_fish_fdt_pk_0_0.xci",
+        "inst_hier_path": "fdt_pk_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "fdt_pk",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "i_vld": {
+            "direction": "I"
+          },
+          "i_data": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "o_rdy": {
+            "direction": "O"
+          },
+          "o_vld": {
+            "direction": "O"
+          },
+          "o_bit": {
+            "direction": "O"
+          },
+          "i_rdy": {
+            "direction": "I"
+          },
+          "o_done": {
+            "direction": "O"
+          }
+        }
+      },
+      "counter_0": {
+        "vlnv": "xilinx.com:module_ref:counter:1.0",
+        "xci_name": "babel_fish_counter_0_0",
+        "xci_path": "ip\\babel_fish_counter_0_0\\babel_fish_counter_0_0.xci",
+        "inst_hier_path": "counter_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "counter",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "i_reset": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "i_rdy": {
+            "direction": "I"
+          },
+          "o_vld": {
+            "direction": "O"
+          },
+          "o_cnt": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "o_done": {
+            "direction": "O"
+          }
+        }
+      },
+      "xlconstant_0": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "babel_fish_xlconstant_0_0",
+        "xci_path": "ip\\babel_fish_xlconstant_0_0\\babel_fish_xlconstant_0_0.xci",
+        "inst_hier_path": "xlconstant_0",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "2"
+          },
+          "CONST_WIDTH": {
+            "value": "8"
+          }
+        }
+      },
+      "xlconstant_2": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "babel_fish_xlconstant_2_0",
+        "xci_path": "ip\\babel_fish_xlconstant_2_0\\babel_fish_xlconstant_2_0.xci",
+        "inst_hier_path": "xlconstant_2",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "1"
+          },
+          "CONST_WIDTH": {
+            "value": "2"
+          }
+        }
+      },
+      "xlconstant_4": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "babel_fish_xlconstant_4_0",
+        "xci_path": "ip\\babel_fish_xlconstant_4_0\\babel_fish_xlconstant_4_0.xci",
+        "inst_hier_path": "xlconstant_4",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "2"
+          },
+          "CONST_WIDTH": {
+            "value": "16"
+          }
+        }
+      },
+      "xlconstant_5": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "babel_fish_xlconstant_5_0",
+        "xci_path": "ip\\babel_fish_xlconstant_5_0\\babel_fish_xlconstant_5_0.xci",
+        "inst_hier_path": "xlconstant_5",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "2"
+          },
+          "CONST_WIDTH": {
+            "value": "8"
+          }
+        }
+      },
+      "multiplexer_0": {
+        "vlnv": "xilinx.com:module_ref:multiplexer:1.0",
+        "xci_name": "babel_fish_multiplexer_0_0",
+        "xci_path": "ip\\babel_fish_multiplexer_0_0\\babel_fish_multiplexer_0_0.xci",
+        "inst_hier_path": "multiplexer_0",
+        "parameters": {
+          "address_width": {
+            "value": "1"
+          },
+          "channel_number": {
+            "value": "2"
+          },
+          "data_width": {
+            "value": "8"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "multiplexer",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "i_data": {
+            "direction": "I",
+            "left": "15",
+            "right": "0",
+            "parameters": {
+              "PortWidth": {
+                "value": "16",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "i_vld": {
+            "direction": "I"
+          },
+          "i_chn": {
+            "direction": "I",
+            "left": "0",
+            "right": "0"
+          },
+          "o_data": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          }
+        }
+      },
+      "async2sync_5": {
+        "vlnv": "xilinx.com:module_ref:async2sync:1.0",
+        "xci_name": "babel_fish_async2sync_4_0",
+        "xci_path": "ip\\babel_fish_async2sync_4_0\\babel_fish_async2sync_4_0.xci",
+        "inst_hier_path": "async2sync_5",
+        "parameters": {
+          "sync_level": {
+            "value": "5"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "async2sync",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "i_data": {
+            "direction": "I",
+            "left": "0",
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "undef",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "o_data": {
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          }
+        }
+      },
+      "xlconstant_6": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "babel_fish_xlconstant_6_0",
+        "xci_path": "ip\\babel_fish_xlconstant_6_0\\babel_fish_xlconstant_6_0.xci",
+        "inst_hier_path": "xlconstant_6",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "8"
+          },
+          "CONST_WIDTH": {
+            "value": "8"
+          }
+        }
+      },
+      "xlconstant_7": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "babel_fish_xlconstant_7_0",
+        "xci_path": "ip\\babel_fish_xlconstant_7_0\\babel_fish_xlconstant_7_0.xci",
+        "inst_hier_path": "xlconstant_7",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "32"
+          },
+          "CONST_WIDTH": {
+            "value": "8"
+          }
+        }
+      },
+      "xlconcat_0": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "babel_fish_xlconcat_0_0",
+        "xci_path": "ip\\babel_fish_xlconcat_0_0\\babel_fish_xlconcat_0_0.xci",
+        "inst_hier_path": "xlconcat_0",
+        "parameters": {
+          "IN0_WIDTH": {
+            "value": "8"
+          },
+          "IN1_WIDTH": {
+            "value": "8"
+          }
+        }
+      },
+      "special_pk_0": {
+        "vlnv": "xilinx.com:module_ref:special_pk:1.0",
+        "xci_name": "babel_fish_special_pk_0_0",
+        "xci_path": "ip\\babel_fish_special_pk_0_0\\babel_fish_special_pk_0_0.xci",
+        "inst_hier_path": "special_pk_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "special_pk",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "i_seq_sz": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "i_chip_sz": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "i_chip": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "i_vld": {
+            "direction": "I"
+          },
+          "o_vld": {
+            "direction": "O"
+          },
+          "o_bit": {
+            "direction": "O"
+          },
+          "o_done": {
+            "direction": "O"
+          },
+          "i_rdy": {
+            "direction": "I"
+          }
+        }
+      },
+      "predict_good_cnx_0": {
+        "vlnv": "xilinx.com:module_ref:predict_good_cnx:1.0",
+        "xci_name": "babel_fish_predict_good_cnx_0_0",
+        "xci_path": "ip\\babel_fish_predict_good_cnx_0_0\\babel_fish_predict_good_cnx_0_0.xci",
+        "inst_hier_path": "predict_good_cnx_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "predict_good_cnx",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "i_verck": {
+            "direction": "I"
+          },
+          "i_xpp": {
+            "direction": "I"
+          },
+          "i_no_new_fdt_byte": {
+            "direction": "I"
+          },
+          "o_good_cnx": {
+            "direction": "O"
+          }
+        }
+      },
+      "simple_fdt_handler_0": {
+        "vlnv": "xilinx.com:module_ref:simple_fdt_handler:1.0",
+        "xci_name": "babel_fish_simple_fdt_handler_0_0",
+        "xci_path": "ip\\babel_fish_simple_fdt_handler_0_0\\babel_fish_simple_fdt_handler_0_0.xci",
+        "inst_hier_path": "simple_fdt_handler_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "simple_fdt_handler",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "i_start_fdt": {
+            "direction": "I",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "undef",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "o_seq_select": {
+            "direction": "O"
+          },
+          "o_mux_vld": {
+            "direction": "O"
+          },
+          "o_sp_vld": {
+            "direction": "O"
+          },
+          "o_cnt_reset": {
+            "type": "rst",
+            "direction": "O"
+          },
+          "i_fdt_done": {
+            "direction": "I"
+          },
+          "i_cnt_done": {
+            "direction": "I"
+          },
+          "i_sending_fdt": {
+            "direction": "I"
+          },
+          "i_sending_sp": {
+            "direction": "I"
+          },
+          "o_seq": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "o_seq_sz": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "o_seq_vld": {
+            "direction": "O"
+          },
+          "i_seq_rdy": {
+            "direction": "I"
+          }
+        }
+      },
+      "bit_lvl_ddsss_2_mdl_0": {
+        "vlnv": "xilinx.com:module_ref:bit_lvl_ddsss_2_mdl_lvl_ddsss:1.0",
+        "xci_name": "babel_fish_bit_lvl_ddsss_2_mdl_0_0",
+        "xci_path": "ip\\babel_fish_bit_lvl_ddsss_2_mdl_0_0\\babel_fish_bit_lvl_ddsss_2_mdl_0_0.xci",
+        "inst_hier_path": "bit_lvl_ddsss_2_mdl_0",
+        "parameters": {
+          "mdl_lvl_max_sequece_width": {
+            "value": "64"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "bit_lvl_ddsss_2_mdl_lvl_ddsss",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "i_zx": {
+            "direction": "I"
+          },
+          "i_bit": {
+            "direction": "I"
+          },
+          "i_vld": {
+            "direction": "I"
+          },
+          "is_sequence": {
+            "direction": "I",
+            "left": "63",
+            "right": "0"
+          },
+          "is_vld": {
+            "direction": "I"
+          },
+          "is_sz": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "o_mdl": {
+            "direction": "O"
+          },
+          "o_rdy": {
+            "direction": "O"
+          },
+          "os_rdy": {
+            "direction": "O"
+          },
+          "dbg_rec_bit": {
+            "direction": "O"
+          }
+        }
+      },
+      "scheduler_0": {
+        "vlnv": "xilinx.com:module_ref:scheduler:1.0",
+        "xci_name": "babel_fish_scheduler_0_0",
+        "xci_path": "ip\\babel_fish_scheduler_0_0\\babel_fish_scheduler_0_0.xci",
+        "inst_hier_path": "scheduler_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "scheduler",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "ot_rdy": {
+            "direction": "O"
+          },
+          "it_vld": {
+            "direction": "I"
+          },
+          "it_bit": {
+            "direction": "I"
+          },
+          "it_no_new_fdt_byte": {
+            "direction": "I"
+          },
+          "os_rdy": {
+            "direction": "O"
+          },
+          "is_vld": {
+            "direction": "I"
+          },
+          "is_bit": {
+            "direction": "I"
+          },
+          "is_done": {
+            "direction": "I"
+          },
+          "of_rdy": {
+            "direction": "O"
+          },
+          "if_vld": {
+            "direction": "I"
+          },
+          "if_bit": {
+            "direction": "I"
+          },
+          "if_done": {
+            "direction": "I"
+          },
+          "i_good_cnx": {
+            "direction": "I"
+          },
+          "o_sending_qi_pk": {
+            "direction": "O"
+          },
+          "o_sending_sp_pk": {
+            "direction": "O"
+          },
+          "o_sending_fdt_pk": {
+            "direction": "O"
+          },
+          "i_rdy": {
+            "direction": "I"
+          },
+          "o_vld": {
+            "direction": "O"
+          },
+          "o_bit": {
+            "direction": "O"
+          }
+        }
+      },
+      "gen_seq_0": {
+        "vlnv": "xilinx.com:module_ref:gen_seq:1.0",
+        "xci_name": "babel_fish_gen_seq_0_0",
+        "xci_path": "ip\\babel_fish_gen_seq_0_0\\babel_fish_gen_seq_0_0.xci",
+        "inst_hier_path": "gen_seq_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "gen_seq",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "is_sequence": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "is_sz": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "is_vld": {
+            "direction": "I"
+          },
+          "os_rdy": {
+            "direction": "O"
+          },
+          "ic_chip": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "ic_sz": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "ic_vld": {
+            "direction": "I"
+          },
+          "oc_rdy": {
+            "direction": "O"
+          },
+          "i_rdy": {
+            "direction": "I"
+          },
+          "o_vld": {
+            "direction": "O"
+          },
+          "o_sequence": {
+            "direction": "O",
+            "left": "63",
+            "right": "0"
+          },
+          "o_sz": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "and_and_0_o_c": {
+        "ports": [
+          "and_and_0/o_c",
+          "CM2P"
+        ]
+      },
+      "and_and_1_o_c": {
+        "ports": [
+          "and_and_1/o_c",
+          "CM2N"
+        ]
+      },
+      "and_and_2_o_c": {
+        "ports": [
+          "and_and_2/o_c",
+          "CM1P"
+        ]
+      },
+      "and_and_3_o_c": {
+        "ports": [
+          "and_and_3/o_c",
+          "CM1N"
+        ]
+      },
+      "ask_1": {
+        "ports": [
+          "ask",
+          "async2sync_4/i_data"
+        ]
+      },
+      "ask_2_bit_0_o_bit": {
+        "ports": [
+          "ask_2_bit_n_cnt_0/o_bit",
+          "dbg_a2b_bit",
+          "time_manager_0/i_bit"
+        ]
+      },
+      "ask_2_bit_0_o_done": {
+        "ports": [
+          "ask_2_bit_n_cnt_0/o_done",
+          "dbg_a2b_done",
+          "time_manager_0/i_done"
+        ]
+      },
+      "ask_2_bit_0_o_vld": {
+        "ports": [
+          "ask_2_bit_n_cnt_0/o_vld",
+          "dbg_a2b_vld",
+          "time_manager_0/i_vld"
+        ]
+      },
+      "ask_2_bit_n_cnt_0_o_cnt": {
+        "ports": [
+          "ask_2_bit_n_cnt_0/o_cnt",
+          "avrg_tic_pr_ask_bit_1/i_cnt"
+        ]
+      },
+      "ask_2_bit_n_cnt_0_o_cnt_vld": {
+        "ports": [
+          "ask_2_bit_n_cnt_0/o_cnt_vld",
+          "avrg_tic_pr_ask_bit_1/i_vld"
+        ]
+      },
+      "ask_2_bit_n_cnt_0_o_receiving_ask": {
+        "ports": [
+          "ask_2_bit_n_cnt_0/o_receiving_ask",
+          "avrg_tic_pr_ddsss_bi_0/i_receiving_ask"
+        ]
+      },
+      "ask_2_ddsss_manager_0_o_vld": {
+        "ports": [
+          "scheduler_0/o_vld",
+          "dbg_vld",
+          "bit_lvl_ddsss_2_mdl_0/i_vld"
+        ]
+      },
+      "async2sync_0_o_data": {
+        "ports": [
+          "async2sync_0/o_data",
+          "dbg_zxp",
+          "deglitcher_0/i_zx",
+          "frq_detec_v2_0/i_pwm"
+        ]
+      },
+      "async2sync_1_o_data": {
+        "ports": [
+          "async2sync_1/o_data",
+          "dbg_zxn",
+          "deglitcher_1/i_zx"
+        ]
+      },
+      "async2sync_4_o_data": {
+        "ports": [
+          "async2sync_4/o_data",
+          "dbg_ask",
+          "ask_2_bit_n_cnt_0/i_ask"
+        ]
+      },
+      "async2sync_5_o_data": {
+        "ports": [
+          "async2sync_5/o_data",
+          "predict_good_cnx_0/i_verck"
+        ]
+      },
+      "avrg_tic_pr_ask_bit_0_o_tic_nbr": {
+        "ports": [
+          "avrg_tic_pr_ask_bit_1/o_cnt",
+          "time_manager_0/i_ask_tic_pr_bit"
+        ]
+      },
+      "avrg_tic_pr_ddsss_bit_0_o_tic_nbr": {
+        "ports": [
+          "avrg_tic_pr_ddsss_bi_0/o_tic_nbr",
+          "time_manager_0/i_ddsss_tic_pr_bit"
+        ]
+      },
+      "bit_lvl_ddsss_2_mdl_0_dbg_rec_bit": {
+        "ports": [
+          "bit_lvl_ddsss_2_mdl_0/dbg_rec_bit",
+          "dbg_rec_bit"
+        ]
+      },
+      "bit_lvl_ddsss_2_mdl_0_o_mdl": {
+        "ports": [
+          "bit_lvl_ddsss_2_mdl_0/o_mdl",
+          "dbg_ddsss",
+          "dfilpflop_0/i_data",
+          "dfilpflop_1/i_data"
+        ]
+      },
+      "bit_lvl_ddsss_2_mdl_0_o_rdy": {
+        "ports": [
+          "bit_lvl_ddsss_2_mdl_0/o_rdy",
+          "dbg_rdy",
+          "avrg_tic_pr_ddsss_bi_0/i_rdy",
+          "scheduler_0/i_rdy"
+        ]
+      },
+      "bit_lvl_ddsss_2_mdl_0_os_rdy": {
+        "ports": [
+          "bit_lvl_ddsss_2_mdl_0/os_rdy",
+          "gen_seq_0/i_rdy"
+        ]
+      },
+      "clk_1": {
+        "ports": [
+          "clk",
+          "clk_wiz_0/clk_in1",
+          "dbg_clk_src"
+        ]
+      },
+      "clk_wiz_0_clk_out1": {
+        "ports": [
+          "clk_wiz_0/clk_out1",
+          "async2sync_0/clk",
+          "async2sync_1/clk",
+          "async2sync_4/clk",
+          "dbg_clk",
+          "deglitcher_0/clk",
+          "deglitcher_1/clk",
+          "frq_detec_v2_0/clk",
+          "ask_2_bit_n_cnt_0/clk",
+          "avrg_tic_pr_ask_bit_1/clk",
+          "avrg_tic_pr_ddsss_bi_0/clk",
+          "time_manager_0/clk",
+          "fdt_pk_0/clk",
+          "counter_0/clk",
+          "multiplexer_0/clk",
+          "async2sync_5/clk",
+          "special_pk_0/clk",
+          "predict_good_cnx_0/clk",
+          "simple_fdt_handler_0/clk",
+          "bit_lvl_ddsss_2_mdl_0/clk",
+          "scheduler_0/clk",
+          "gen_seq_0/clk"
+        ]
+      },
+      "counter_0_o_cnt": {
+        "ports": [
+          "counter_0/o_cnt",
+          "fdt_pk_0/i_data"
+        ]
+      },
+      "counter_0_o_done": {
+        "ports": [
+          "counter_0/o_done",
+          "simple_fdt_handler_0/i_cnt_done"
+        ]
+      },
+      "counter_0_o_vld": {
+        "ports": [
+          "counter_0/o_vld",
+          "fdt_pk_0/i_vld"
+        ]
+      },
+      "deglitcher_0_o_glitch": {
+        "ports": [
+          "deglitcher_0/o_glitch",
+          "dbg_glitch"
+        ]
+      },
+      "deglitcher_0_o_miss": {
+        "ports": [
+          "deglitcher_0/o_miss",
+          "dbg_miss"
+        ]
+      },
+      "deglitcher_0_o_rising_edge": {
+        "ports": [
+          "deglitcher_0/o_rising_edge",
+          "dbg_zxp_edge"
+        ]
+      },
+      "deglitcher_0_o_zx": {
+        "ports": [
+          "deglitcher_0/o_zx",
+          "dfilpflop_1/clk",
+          "dbg_fltr_zxp",
+          "bit_lvl_ddsss_2_mdl_0/i_zx"
+        ]
+      },
+      "deglitcher_1_o_zx": {
+        "ports": [
+          "deglitcher_1/o_zx",
+          "dfilpflop_0/clk",
+          "dbg_fltr_zxn"
+        ]
+      },
+      "dfilpflop_0_o_data": {
+        "ports": [
+          "dfilpflop_0/o_data",
+          "and_and_1/i_a",
+          "and_and_3/i_a"
+        ]
+      },
+      "dfilpflop_1_o_data": {
+        "ports": [
+          "dfilpflop_1/o_data",
+          "and_and_0/i_a",
+          "and_and_2/i_a"
+        ]
+      },
+      "fdt_pk_0_o_bit": {
+        "ports": [
+          "fdt_pk_0/o_bit",
+          "scheduler_0/if_bit"
+        ]
+      },
+      "fdt_pk_0_o_done": {
+        "ports": [
+          "fdt_pk_0/o_done",
+          "simple_fdt_handler_0/i_fdt_done",
+          "scheduler_0/if_done"
+        ]
+      },
+      "fdt_pk_0_o_rdy": {
+        "ports": [
+          "fdt_pk_0/o_rdy",
+          "counter_0/i_rdy"
+        ]
+      },
+      "fdt_pk_0_o_vld": {
+        "ports": [
+          "fdt_pk_0/o_vld",
+          "scheduler_0/if_vld"
+        ]
+      },
+      "frq_dectector_0_o_data": {
+        "ports": [
+          "frq_detec_v2_0/o_data",
+          "CF_MPPN",
+          "CF_MPPP",
+          "no_t_0/cin",
+          "and_and_2/i_b",
+          "and_and_3/i_b",
+          "deglitcher_0/i_mpp",
+          "deglitcher_1/i_mpp",
+          "avrg_tic_pr_ddsss_bi_0/i_xpp",
+          "predict_good_cnx_0/i_xpp"
+        ]
+      },
+      "gen_seq_0_o_sequence": {
+        "ports": [
+          "gen_seq_0/o_sequence",
+          "bit_lvl_ddsss_2_mdl_0/is_sequence"
+        ]
+      },
+      "gen_seq_0_o_sz": {
+        "ports": [
+          "gen_seq_0/o_sz",
+          "bit_lvl_ddsss_2_mdl_0/is_sz"
+        ]
+      },
+      "gen_seq_0_o_vld": {
+        "ports": [
+          "gen_seq_0/o_vld",
+          "bit_lvl_ddsss_2_mdl_0/is_vld"
+        ]
+      },
+      "gen_seq_0_os_rdy": {
+        "ports": [
+          "gen_seq_0/os_rdy",
+          "simple_fdt_handler_0/i_seq_rdy"
+        ]
+      },
+      "multiplexer_0_o_data": {
+        "ports": [
+          "multiplexer_0/o_data",
+          "special_pk_0/i_seq_sz"
+        ]
+      },
+      "parallel_2_serial_0_o_bit": {
+        "ports": [
+          "scheduler_0/o_bit",
+          "dbg_bit",
+          "bit_lvl_ddsss_2_mdl_0/i_bit"
+        ]
+      },
+      "predict_good_cnx_0_o_good_cnx": {
+        "ports": [
+          "predict_good_cnx_0/o_good_cnx",
+          "scheduler_0/i_good_cnx"
+        ]
+      },
+      "scheduler_0_o_sending_fdt_pk": {
+        "ports": [
+          "scheduler_0/o_sending_fdt_pk",
+          "dbg_sending_fdt_pk",
+          "simple_fdt_handler_0/i_sending_fdt"
+        ]
+      },
+      "scheduler_0_o_sending_qi_pk": {
+        "ports": [
+          "scheduler_0/o_sending_qi_pk",
+          "dbg_sending_qi_pk"
+        ]
+      },
+      "scheduler_0_o_sending_sp_pk": {
+        "ports": [
+          "scheduler_0/o_sending_sp_pk",
+          "dbg_sending_sp_pk",
+          "simple_fdt_handler_0/i_sending_sp"
+        ]
+      },
+      "scheduler_0_of_rdy": {
+        "ports": [
+          "scheduler_0/of_rdy",
+          "fdt_pk_0/i_rdy"
+        ]
+      },
+      "scheduler_0_os_rdy": {
+        "ports": [
+          "scheduler_0/os_rdy",
+          "special_pk_0/i_rdy"
+        ]
+      },
+      "scheduler_0_ot_rdy": {
+        "ports": [
+          "scheduler_0/ot_rdy",
+          "time_manager_0/i_rdy"
+        ]
+      },
+      "simple_fdt_handler_0_o_cnt_reset": {
+        "ports": [
+          "simple_fdt_handler_0/o_cnt_reset",
+          "counter_0/i_reset"
+        ]
+      },
+      "simple_fdt_handler_0_o_mux_vld": {
+        "ports": [
+          "simple_fdt_handler_0/o_mux_vld",
+          "multiplexer_0/i_vld"
+        ]
+      },
+      "simple_fdt_handler_0_o_seq": {
+        "ports": [
+          "simple_fdt_handler_0/o_seq",
+          "gen_seq_0/is_sequence"
+        ]
+      },
+      "simple_fdt_handler_0_o_seq_select": {
+        "ports": [
+          "simple_fdt_handler_0/o_seq_select",
+          "multiplexer_0/i_chn"
+        ]
+      },
+      "simple_fdt_handler_0_o_seq_sz": {
+        "ports": [
+          "simple_fdt_handler_0/o_seq_sz",
+          "gen_seq_0/is_sz"
+        ]
+      },
+      "simple_fdt_handler_0_o_seq_vld": {
+        "ports": [
+          "simple_fdt_handler_0/o_seq_vld",
+          "gen_seq_0/is_vld",
+          "gen_seq_0/ic_vld"
+        ]
+      },
+      "simple_fdt_handler_0_o_sp_vld": {
+        "ports": [
+          "simple_fdt_handler_0/o_sp_vld",
+          "special_pk_0/i_vld"
+        ]
+      },
+      "special_pk_0_o_bit": {
+        "ports": [
+          "special_pk_0/o_bit",
+          "scheduler_0/is_bit"
+        ]
+      },
+      "special_pk_0_o_done": {
+        "ports": [
+          "special_pk_0/o_done",
+          "scheduler_0/is_done"
+        ]
+      },
+      "special_pk_0_o_vld": {
+        "ports": [
+          "special_pk_0/o_vld",
+          "scheduler_0/is_vld"
+        ]
+      },
+      "start_fdt_btn_1": {
+        "ports": [
+          "start_fdt_btn",
+          "simple_fdt_handler_0/i_start_fdt"
+        ]
+      },
+      "time_manager_0_o_bit": {
+        "ports": [
+          "time_manager_0/o_bit",
+          "scheduler_0/it_bit"
+        ]
+      },
+      "time_manager_0_o_no_sending_new_fdt_byte": {
+        "ports": [
+          "time_manager_0/o_no_sending_new_fdt_byte",
+          "predict_good_cnx_0/i_no_new_fdt_byte",
+          "scheduler_0/it_no_new_fdt_byte"
+        ]
+      },
+      "time_manager_0_o_vld": {
+        "ports": [
+          "time_manager_0/o_vld",
+          "scheduler_0/it_vld"
+        ]
+      },
+      "vrect_ok_1": {
+        "ports": [
+          "vrect_ok",
+          "async2sync_5/i_data"
+        ]
+      },
+      "xlconcat_0_dout": {
+        "ports": [
+          "xlconcat_0/dout",
+          "multiplexer_0/i_data"
+        ]
+      },
+      "xlconstant_0_dout": {
+        "ports": [
+          "no_t_0/cout",
+          "CF_EPPN",
+          "CF_EPPP",
+          "and_and_0/i_b",
+          "and_and_1/i_b"
+        ]
+      },
+      "xlconstant_0_dout1": {
+        "ports": [
+          "xlconstant_0/dout",
+          "gen_seq_0/ic_sz"
+        ]
+      },
+      "xlconstant_1_dout": {
+        "ports": [
+          "xlconstant_1/dout",
+          "CM3N",
+          "CM3P"
+        ]
+      },
+      "xlconstant_2_dout": {
+        "ports": [
+          "xlconstant_2/dout",
+          "gen_seq_0/ic_chip"
+        ]
+      },
+      "xlconstant_4_dout": {
+        "ports": [
+          "xlconstant_4/dout",
+          "special_pk_0/i_chip"
+        ]
+      },
+      "xlconstant_5_dout": {
+        "ports": [
+          "xlconstant_5/dout",
+          "special_pk_0/i_chip_sz"
+        ]
+      },
+      "xlconstant_6_dout": {
+        "ports": [
+          "xlconstant_6/dout",
+          "xlconcat_0/In1"
+        ]
+      },
+      "xlconstant_7_dout": {
+        "ports": [
+          "xlconstant_7/dout",
+          "xlconcat_0/In0"
+        ]
+      },
+      "zxn_1": {
+        "ports": [
+          "zxn",
+          "async2sync_1/i_data"
+        ]
+      },
+      "zxp_1": {
+        "ports": [
+          "zxp",
+          "async2sync_0/i_data"
+        ]
+      }
+    }
+  }
+}

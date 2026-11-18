@@ -1,0 +1,44 @@
+-- Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+-- --------------------------------------------------------------------------------
+-- Tool Version: Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
+-- Date        : Fri Aug 21 10:58:35 2026
+-- Host        : YY327460 running 64-bit major release  (build 9200)
+-- Command     : write_vhdl -force -mode funcsim
+--               c:/Users/320259900/Documents/git/fpga_babel_fish/babel_fish.gen/sources_1/bd/babel_fish/ip/babel_fish_no_t_0_0/babel_fish_no_t_0_0_sim_netlist.vhdl
+-- Design      : babel_fish_no_t_0_0
+-- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
+--               synthesized. This netlist cannot be used for SDF annotated simulation.
+-- Device      : xc7a35tcpg236-1
+-- --------------------------------------------------------------------------------
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+library UNISIM;
+use UNISIM.VCOMPONENTS.ALL;
+entity babel_fish_no_t_0_0 is
+  port (
+    cin : in STD_LOGIC;
+    cout : out STD_LOGIC
+  );
+  attribute NotValidForBitStream : boolean;
+  attribute NotValidForBitStream of babel_fish_no_t_0_0 : entity is true;
+  attribute CHECK_LICENSE_TYPE : string;
+  attribute CHECK_LICENSE_TYPE of babel_fish_no_t_0_0 : entity is "babel_fish_no_t_0_0,no_t,{}";
+  attribute downgradeipidentifiedwarnings : string;
+  attribute downgradeipidentifiedwarnings of babel_fish_no_t_0_0 : entity is "yes";
+  attribute ip_definition_source : string;
+  attribute ip_definition_source of babel_fish_no_t_0_0 : entity is "module_ref";
+  attribute x_core_info : string;
+  attribute x_core_info of babel_fish_no_t_0_0 : entity is "no_t,Vivado 2021.1";
+end babel_fish_no_t_0_0;
+
+architecture STRUCTURE of babel_fish_no_t_0_0 is
+begin
+cout_INST_0: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => cin,
+      O => cout
+    );
+end STRUCTURE;

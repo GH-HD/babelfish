@@ -1,0 +1,1 @@
+vopt +acc=npr -l elaborate.log -L xil_defaultlib -L xpm -L xlconstant_v1_1_7 -L xlconcat_v2_1_4 -L unisims_ver -L unimacro_ver -L secureip -work xil_defaultlib xil_defaultlib.babel_fish xil_defaultlib.glbl -o babel_fish_opt

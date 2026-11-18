@@ -1,0 +1,165 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.689429",
+   "Default View_TopLeft":"1878,313",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port port-id_clk -pg 1 -lvl 0 -x -50 -y 1430 -defaultsOSRD
+preplace port port-id_ask -pg 1 -lvl 0 -x -50 -y 550 -defaultsOSRD
+preplace port port-id_zxn -pg 1 -lvl 0 -x -50 -y 1580 -defaultsOSRD
+preplace port port-id_zxp -pg 1 -lvl 0 -x -50 -y 1700 -defaultsOSRD
+preplace port port-id_dbg_ddsss -pg 1 -lvl 11 -x 3490 -y 120 -defaultsOSRD
+preplace port port-id_dbg_bit -pg 1 -lvl 11 -x 3490 -y 20 -defaultsOSRD
+preplace port port-id_dbg_vld -pg 1 -lvl 11 -x 3490 -y 270 -defaultsOSRD
+preplace port port-id_dbg_clk -pg 1 -lvl 11 -x 3490 -y 1510 -defaultsOSRD
+preplace port port-id_dbg_clk_src -pg 1 -lvl 11 -x 3490 -y 1490 -defaultsOSRD
+preplace port port-id_dbg_rec_bit -pg 1 -lvl 11 -x 3490 -y 180 -defaultsOSRD
+preplace port port-id_dbg_rdy -pg 1 -lvl 11 -x 3490 -y 140 -defaultsOSRD
+preplace port port-id_dbg_fltr_zxp -pg 1 -lvl 11 -x 3490 -y 690 -defaultsOSRD
+preplace port port-id_dbg_fltr_zxn -pg 1 -lvl 11 -x 3490 -y 1310 -defaultsOSRD
+preplace port port-id_dbg_glitch -pg 1 -lvl 11 -x 3490 -y 710 -defaultsOSRD
+preplace port port-id_dbg_miss -pg 1 -lvl 11 -x 3490 -y 730 -defaultsOSRD
+preplace port port-id_dbg_zxp_edge -pg 1 -lvl 11 -x 3490 -y 750 -defaultsOSRD
+preplace port port-id_dbg_a2b_vld -pg 1 -lvl 11 -x 3490 -y 380 -defaultsOSRD
+preplace port port-id_dbg_a2b_bit -pg 1 -lvl 11 -x 3490 -y 410 -defaultsOSRD
+preplace port port-id_dbg_a2b_done -pg 1 -lvl 11 -x 3490 -y 440 -defaultsOSRD
+preplace port port-id_tx1 -pg 1 -lvl 11 -x 3490 -y 60 -defaultsOSRD
+preplace port port-id_bdg_tx2 -pg 1 -lvl 11 -x 3490 -y 80 -defaultsOSRD
+preplace port port-id_vrect_ok -pg 1 -lvl 0 -x -50 -y 600 -defaultsOSRD
+preplace port port-id_start_fdt_btn -pg 1 -lvl 0 -x -50 -y 730 -defaultsOSRD
+preplace port port-id_dbg_sending_qi_pk -pg 1 -lvl 11 -x 3490 -y 500 -defaultsOSRD
+preplace port port-id_dbg_sending_sp_pk -pg 1 -lvl 11 -x 3490 -y 550 -defaultsOSRD
+preplace port port-id_dbg_sending_fdt_pk -pg 1 -lvl 11 -x 3490 -y 590 -defaultsOSRD
+preplace portBus CF_EPPN -pg 1 -lvl 11 -x 3490 -y 870 -defaultsOSRD
+preplace portBus CF_MPPN -pg 1 -lvl 11 -x 3490 -y 1270 -defaultsOSRD
+preplace portBus CF_EPPP -pg 1 -lvl 11 -x 3490 -y 890 -defaultsOSRD
+preplace portBus CF_MPPP -pg 1 -lvl 11 -x 3490 -y 1290 -defaultsOSRD
+preplace portBus CM3N -pg 1 -lvl 11 -x 3490 -y 1690 -defaultsOSRD
+preplace portBus CM2N -pg 1 -lvl 11 -x 3490 -y 960 -defaultsOSRD
+preplace portBus CM1N -pg 1 -lvl 11 -x 3490 -y 1220 -defaultsOSRD
+preplace portBus CM3P -pg 1 -lvl 11 -x 3490 -y 1710 -defaultsOSRD
+preplace portBus CM2P -pg 1 -lvl 11 -x 3490 -y 820 -defaultsOSRD
+preplace portBus CM1P -pg 1 -lvl 11 -x 3490 -y 1080 -defaultsOSRD
+preplace portBus dbg_ask -pg 1 -lvl 11 -x 3490 -y 670 -defaultsOSRD
+preplace portBus dbg_zxp -pg 1 -lvl 11 -x 3490 -y 1530 -defaultsOSRD
+preplace portBus dbg_zxn -pg 1 -lvl 11 -x 3490 -y 1470 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 2 -x 370 -y 1430 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 3 -x 790 -y 1710 -defaultsOSRD
+preplace inst async2sync_0 -pg 1 -lvl 2 -x 370 -y 1690 -defaultsOSRD
+preplace inst async2sync_1 -pg 1 -lvl 2 -x 370 -y 1570 -defaultsOSRD
+preplace inst async2sync_4 -pg 1 -lvl 2 -x 370 -y 490 -defaultsOSRD
+preplace inst no_t_0 -pg 1 -lvl 2 -x 370 -y 1020 -defaultsOSRD
+preplace inst and_and_0 -pg 1 -lvl 3 -x 790 -y 910 -defaultsOSRD
+preplace inst and_and_1 -pg 1 -lvl 3 -x 790 -y 1050 -defaultsOSRD
+preplace inst and_and_2 -pg 1 -lvl 3 -x 790 -y 1170 -defaultsOSRD
+preplace inst and_and_3 -pg 1 -lvl 3 -x 790 -y 1290 -defaultsOSRD
+preplace inst dfilpflop_0 -pg 1 -lvl 2 -x 370 -y 1200 -defaultsOSRD
+preplace inst dfilpflop_1 -pg 1 -lvl 2 -x 370 -y 910 -defaultsOSRD
+preplace inst deglitcher_0 -pg 1 -lvl 2 -x 370 -y 750 -defaultsOSRD
+preplace inst deglitcher_1 -pg 1 -lvl 3 -x 790 -y 1450 -defaultsOSRD
+preplace inst frq_detec_v2_0 -pg 1 -lvl 2 -x 370 -y 1320 -defaultsOSRD
+preplace inst ask_2_bit_n_cnt_0 -pg 1 -lvl 3 -x 790 -y 190 -defaultsOSRD
+preplace inst avrg_tic_pr_ask_bit_1 -pg 1 -lvl 3 -x 790 -y 360 -defaultsOSRD
+preplace inst avrg_tic_pr_ddsss_bi_0 -pg 1 -lvl 3 -x 790 -y 560 -defaultsOSRD
+preplace inst time_manager_0 -pg 1 -lvl 9 -x 2680 -y 230 -defaultsOSRD
+preplace inst fdt_pk_0 -pg 1 -lvl 9 -x 2680 -y 440 -defaultsOSRD
+preplace inst counter_0 -pg 1 -lvl 5 -x 1510 -y 400 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 1 -x 50 -y -50 -defaultsOSRD
+preplace inst xlconstant_2 -pg 1 -lvl 1 -x 50 -y -150 -defaultsOSRD
+preplace inst xlconstant_4 -pg 1 -lvl 8 -x 2290 -y 620 -defaultsOSRD
+preplace inst xlconstant_5 -pg 1 -lvl 8 -x 2290 -y 520 -defaultsOSRD
+preplace inst multiplexer_0 -pg 1 -lvl 7 -x 2080 -y 570 -defaultsOSRD
+preplace inst async2sync_5 -pg 1 -lvl 2 -x 370 -y 610 -defaultsOSRD
+preplace inst xlconstant_6 -pg 1 -lvl 5 -x 1510 -y 520 -defaultsOSRD
+preplace inst xlconstant_7 -pg 1 -lvl 5 -x 1510 -y 620 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 6 -x 1780 -y 600 -defaultsOSRD
+preplace inst special_pk_0 -pg 1 -lvl 9 -x 2680 -y 630 -defaultsOSRD
+preplace inst predict_good_cnx_0 -pg 1 -lvl 9 -x 2680 -y 960 -defaultsOSRD
+preplace inst simple_fdt_handler_0 -pg 1 -lvl 4 -x 1190 -y 640 -defaultsOSRD
+preplace inst bit_lvl_ddsss_2_mdl_0 -pg 1 -lvl 3 -x 790 -y -20 -defaultsOSRD
+preplace inst scheduler_0 -pg 1 -lvl 10 -x 3170 -y 550 -defaultsOSRD
+preplace inst gen_seq_0 -pg 1 -lvl 2 -x 370 -y -90 -defaultsOSRD
+preplace netloc and_and_0_o_c 1 3 8 NJ 910 N 910 N 910 N 910 N 910 2430 840 N 840 3440
+preplace netloc and_and_1_o_c 1 3 8 980J 920 N 920 N 920 N 920 N 920 2440 850 N 850 3380
+preplace netloc and_and_2_o_c 1 3 8 NJ 1170 N 1170 N 1170 N 1170 N 1170 N 1170 N 1170 3440
+preplace netloc and_and_3_o_c 1 3 8 NJ 1290 N 1290 N 1290 N 1290 N 1290 N 1290 N 1290 3340
+preplace netloc ask_1 1 0 2 NJ 550 130
+preplace netloc ask_2_bit_0_o_bit 1 3 8 N 140 N 140 N 140 N 140 N 140 2420 50 N 50 3420
+preplace netloc ask_2_bit_0_o_done 1 3 8 N 180 N 180 N 180 N 180 N 180 2410 0 N 0 3430
+preplace netloc ask_2_bit_0_o_vld 1 3 8 N 160 N 160 N 160 N 160 N 160 2430 100 2970 130 3410
+preplace netloc ask_2_bit_n_cnt_0_o_cnt 1 2 2 610 -150 940
+preplace netloc ask_2_bit_n_cnt_0_o_cnt_vld 1 2 2 620 440 950
+preplace netloc ask_2_bit_n_cnt_0_o_receiving_ask 1 2 2 610 460 940
+preplace netloc ask_2_ddsss_manager_0_o_vld 1 2 9 600 -190 NJ -190 N -190 N -190 N -190 N -190 N -190 N -190 3380
+preplace netloc async2sync_0_o_data 1 1 10 150 1760 620 1560 NJ 1560 N 1560 N 1560 N 1560 N 1560 N 1560 N 1560 3450
+preplace netloc async2sync_1_o_data 1 2 9 610 1550 980J 1530 N 1530 N 1530 N 1530 N 1530 N 1530 N 1530 3420
+preplace netloc async2sync_4_o_data 1 2 9 530 -170 NJ -170 N -170 N -170 N -170 N -170 N -170 N -170 3440
+preplace netloc avrg_tic_pr_ask_bit_0_o_tic_nbr 1 3 6 980 270 N 270 N 270 N 270 N 270 N
+preplace netloc avrg_tic_pr_ddsss_bit_0_o_tic_nbr 1 3 6 990 250 N 250 N 250 N 250 N 250 N
+preplace netloc bit_lvl_ddsss_2_mdl_0_dbg_rec_bit 1 3 8 NJ 10 N 10 N 10 N 10 N 10 N 10 N 10 3450
+preplace netloc bit_lvl_ddsss_2_mdl_0_o_mdl 1 1 10 160 420 600J 450 970 90 N 90 1630 80 N 80 N 80 N 80 2980 120 N
+preplace netloc bit_lvl_ddsss_2_mdl_0_o_rdy 1 2 9 620 470 960 100 N 100 1640 90 N 90 N 90 N 90 2920 140 N
+preplace netloc bit_lvl_ddsss_2_mdl_0_os_rdy 1 1 3 150 -260 NJ -260 950
+preplace netloc clk_1 1 0 11 N 1430 130 1500 550J 1540 NJ 1540 N 1540 N 1540 N 1540 N 1540 N 1540 N 1540 3440
+preplace netloc clk_wiz_0_clk_out1 1 1 10 140 -220 550 -180 1010J 320 1380 320 N 320 1880 320 N 320 2400 110 2960 380 3400
+preplace netloc counter_0_o_cnt 1 5 4 N 400 N 400 N 400 2370
+preplace netloc counter_0_o_vld 1 5 4 N 380 N 380 N 380 2390
+preplace netloc deglitcher_0_o_glitch 1 2 9 570J 760 NJ 760 N 760 N 760 N 760 N 760 2370 740 N 740 3360
+preplace netloc deglitcher_0_o_miss 1 2 9 530J 770 NJ 770 N 770 N 770 N 770 N 770 N 770 N 770 3440
+preplace netloc deglitcher_0_o_rising_edge 1 2 9 NJ 780 NJ 780 N 780 N 780 N 780 N 780 N 780 N 780 3450
+preplace netloc deglitcher_0_o_zx 1 1 10 180 1080 560 800 NJ 800 N 800 N 800 N 800 N 800 N 800 2980 750 3350
+preplace netloc deglitcher_1_o_zx 1 1 10 180 1490 570J 1360 990 1310 N 1310 N 1310 N 1310 N 1310 N 1310 N 1310 N
+preplace netloc dfilpflop_0_o_data 1 2 1 610 1040n
+preplace netloc dfilpflop_1_o_data 1 2 1 590 900n
+preplace netloc fdt_pk_0_o_bit 1 9 1 2890 450n
+preplace netloc fdt_pk_0_o_done 1 3 7 1020 70 N 70 N 70 N 70 N 70 N 70 2950
+preplace netloc fdt_pk_0_o_rdy 1 4 6 1390 20 NJ 20 N 20 N 20 N 20 2900
+preplace netloc fdt_pk_0_o_vld 1 9 1 2900 430n
+preplace netloc frq_dectector_0_o_data 1 1 10 170 1090 600 840 940 930 N 930 N 930 N 930 N 930 2370 860 N 860 3360
+preplace netloc gen_seq_0_o_sequence 1 2 1 580 -70n
+preplace netloc gen_seq_0_o_sz 1 2 1 570 -50n
+preplace netloc gen_seq_0_o_vld 1 2 1 590 -90n
+preplace netloc multiplexer_0_o_data 1 7 2 2210J 680 2380
+preplace netloc parallel_2_serial_0_o_bit 1 2 9 620 -160 NJ -160 N -160 N -160 N -160 N -160 N -160 N -160 3370
+preplace netloc scheduler_0_of_rdy 1 8 3 2440 30 NJ 30 3360
+preplace netloc scheduler_0_os_rdy 1 8 3 2450 60 NJ 60 3340
+preplace netloc scheduler_0_ot_rdy 1 8 3 2460 40 NJ 40 3350
+preplace netloc special_pk_0_o_bit 1 9 1 2930 540n
+preplace netloc special_pk_0_o_done 1 9 1 2940 560n
+preplace netloc special_pk_0_o_vld 1 9 1 2910 520n
+preplace netloc time_manager_0_o_bit 1 9 1 2940 210n
+preplace netloc time_manager_0_o_no_sending_new_fdt_byte 1 8 2 2460 350 2910
+preplace netloc time_manager_0_o_vld 1 9 1 2930 230n
+preplace netloc vrect_ok_1 1 0 2 NJ 600 130
+preplace netloc xlconcat_0_dout 1 6 1 1880 560n
+preplace netloc xlconstant_0_dout 1 2 9 620 980 1020J 940 N 940 N 940 N 940 N 940 2450 870 N 870 3440
+preplace netloc xlconstant_0_dout1 1 1 1 130 -60n
+preplace netloc xlconstant_1_dout 1 3 8 NJ 1710 N 1710 N 1710 N 1710 N 1710 N 1710 N 1710 3390
+preplace netloc xlconstant_2_dout 1 1 1 130 -150n
+preplace netloc xlconstant_4_dout 1 8 1 2370 620n
+preplace netloc xlconstant_5_dout 1 8 1 2390 520n
+preplace netloc xlconstant_6_dout 1 5 1 1620 520n
+preplace netloc xlconstant_7_dout 1 5 1 1630 590n
+preplace netloc zxn_1 1 0 2 NJ 1580 N
+preplace netloc zxp_1 1 0 2 NJ 1700 N
+preplace netloc simple_fdt_handler_0_o_cnt_reset 1 4 1 1380 400n
+preplace netloc simple_fdt_handler_0_o_seq_select 1 4 3 1390 680 NJ 680 1900J
+preplace netloc simple_fdt_handler_0_o_mux_vld 1 4 3 1370 690 1630J 670 1890J
+preplace netloc counter_0_o_done 1 3 3 1030 80 NJ 80 1620
+preplace netloc scheduler_0_o_sending_fdt_pk 1 3 8 1020 810 NJ 810 NJ 810 NJ 810 NJ 810 NJ 810 NJ 810 3340
+preplace netloc scheduler_0_o_sending_sp_pk 1 3 8 1030 790 NJ 790 NJ 790 NJ 790 NJ 790 NJ 790 NJ 790 3420
+preplace netloc simple_fdt_handler_0_o_sp_vld 1 4 5 1360 700 NJ 700 NJ 700 NJ 700 2390J
+preplace netloc gen_seq_0_os_rdy 1 2 2 540J -140 1000
+preplace netloc simple_fdt_handler_0_o_seq 1 1 4 180 -240 NJ -240 NJ -240 1330
+preplace netloc simple_fdt_handler_0_o_seq_sz 1 1 4 160 -250 NJ -250 NJ -250 1350
+preplace netloc simple_fdt_handler_0_o_seq_vld 1 1 4 170 -230 NJ -230 NJ -230 1340
+preplace netloc start_fdt_btn_1 1 0 4 NJ 730 130J 840 590J 750 980
+preplace netloc async2sync_5_o_data 1 2 7 580J 650 950J 950 NJ 950 NJ 950 NJ 950 NJ 950 N
+preplace netloc scheduler_0_o_sending_qi_pk 1 10 1 3390 500n
+preplace netloc predict_good_cnx_0_o_good_cnx 1 9 1 2970 640n
+levelinfo -pg 1 -50 50 370 790 1190 1510 1780 2080 2290 2680 3170 3490
+pagesize -pg 1 -db -bbox -sgen -180 -690 3670 1770
+"
+}
+0
